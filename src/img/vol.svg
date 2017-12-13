@@ -1,0 +1,15 @@
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g transform="translate(-36.000000, -5651.000000)" stroke="#939598" stroke-width="2">
+            <g transform="translate(23.000000, 5560.094543)">
+                <g transform="translate(13.741393, 92.500000)">
+                    <g transform="translate(0.298167, 0.031953)">
+                        <polygon points="13.4355981 4.66859073 6.81192742 9.28201142 0.18825672 4.66859073 6.81192742 0.0551700269"></polygon>
+                        <polyline points="0.188357258 4.66859073 0.188357258 11.8160625 6.81202796 16.4297345 13.4356987 11.8160625 13.4356987 4.66859073"></polyline>
+                        <path d="M6.81202796,9.2821371 L6.81202796,16.4296089"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,114 @@
+.force{
+    padding: 40px 0 30px;
+    background: #fafafa;
+}
+.force__text{
+    margin: 0 auto 30px;
+    font-size: 24px;
+    text-align: center;
+    max-width: 500px;
+}
+.choice_item{
+    text-align: center;
+    border: solid 1px var(--light-grey);
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    display: block;
+    text-decoration: none;
+    color: var(--purple-brown);
+    width: 190px;
+    background: var(--white);
+}
+.choice_item:hover{
+    box-shadow: 0 0 0 3px var(--orange) inset;
+}
+.choice_transport__item:first-child .choice_item{
+    border-left-color: transparent;
+}
+.choice_item__pic{
+    padding: 34px 10px 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 100%;
+}
+.choice_item__img{
+    max-width: 100%;
+}
+.choice_item__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choice_item__info_one{
+    display: flex;
+    margin: 5px;
+}
+.choice_item__info_img{
+    margin-right: 5px;
+}
+.choice_item__info_text{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--cool-grey);
+}
+.choice_item__name{
+    font-size: 24px;
+    font-weight: 100;
+    color: var(--purple-brown);
+    margin: 11px 5px 16px;
+    line-height: 24px;
+}
+.choice_item__day,
+.choice_item__night{
+    display: flex;
+    align-items: center;
+    padding: 2px 20px;
+}
+.choice_item__day_pic{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.choice_item__day_text{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+}
+.day_pic__path{
+    fill:none;
+    stroke: var(--cool-grey);
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width: 2px;
+    transition: var(--transitionAll);
+}
+.choice_item__day .day_pic__path{
+    stroke: var(--orange);
+}
+.choice_item__prices{
+    margin-bottom: 16px;
+}
+.choice_item__pass{
+    display: flex;
+    justify-content: center;
+}
+.pass{
+    display: flex;
+    align-items: center;
+}
+.pass-hidden{
+    opacity: 0;
+}
+.pass__text{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.13;
+    color: var(--cool-grey);
+}
+.pass__img{
+    margin-right: 5px;
+    width: 23px !important;
+}

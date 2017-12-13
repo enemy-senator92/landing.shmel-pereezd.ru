@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="227" height="223" viewBox="0 0 227 223">
+    <g fill="none" fill-rule="evenodd" transform="translate(-.178 .785)">
+        <circle cx="111.838" cy="111.12" r="111" fill="#F7F7F7"/>
+        <path fill="#FFF" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.299 219.662h78.896v-74.14H10.3z"/>
+        <path fill="#FFF" stroke="#F47920" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M42.873 162.32H56.62v-16.798H42.873z"/>
+        <path fill="#FFF" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M27.034 145.522h56.184V89.34H27.034z"/>
+        <path fill="#FFF" stroke="#F47920" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M48.253 106.137H62V89.339H48.253z"/>
+        <path fill="#FFF" stroke="#939598" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M169.287 92.234v20.073h56.183V56.123h-56.183V81.31"/>
+        <path fill="#FFF" stroke="#F47920" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M190.505 72.922h13.747V56.123h-13.747z"/>
+        <g fill="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path stroke="#939598" d="M124.522 122.129l-9.476 42.545L83.218 197.1l12.85 12.104 35.265-36.161 9.88-33.045"/>
+            <path stroke="#939598" d="M152.75 85.38l3.786 33.67 27.095 31.877 7.173 61.363h-18.33l-6.375-54.788-12.96-8.608a136.4 136.4 0 0 1-24.424-20.74 26.129 26.129 0 0 1-6.88-15.373s-3.303-35.87-4.1-44.037c-.797-8.17 1.345-15.84 9.414-17.035 7.84-1.162 14.415 7.136 14.415 7.136M132.628 47.326c-10.013 0-18.13-8.118-18.13-18.13V22.82h36.26v6.376c0 10.012-8.117 18.13-18.13 18.13zM129.839 22.82s-2.226 7.97-14.361 12.253"/>
+            <path stroke="#ADD037" d="M139.6 2.897h-13.945c-6.163 0-11.158 4.995-11.158 11.157v8.766h36.261v-8.766c0-6.162-4.995-11.157-11.157-11.157zM114.497 22.82h50.407"/>
+            <path stroke="#939598" d="M205.348 91.954a6.973 6.973 0 1 1-13.947 0 6.973 6.973 0 0 1 13.947 0z"/>
+            <path stroke="#939598" d="M192.796 87.779l-26.1-7.181-25.132-21.753c-4.85-4.197-12.233-3.452-16.146 1.63a11.161 11.161 0 0 0-2.244 8.082l4.473 38.937 16.337-1.357-2.565-29.226"/>
+            <path stroke="#939598" d="M129.839 68.245l30.084 22.514 32.873 5.18M173.321 218.467h34.069M77.241 202.03l17.483 17.632h10.011M166.697 80.598l-2.994 10.756"/>
+        </g>
+    </g>
+</svg>

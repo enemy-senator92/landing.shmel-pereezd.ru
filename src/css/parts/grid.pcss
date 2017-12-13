@@ -10,7 +10,7 @@ pre {
 }
 html {
     font-family: var(--fontFamily);
-    font-size: calc(var(--fontSize) - 2);
+    font-size: 18px;
     background: var(--white);
     color: var(--purple-brown);
     min-height: 100%;
@@ -23,9 +23,9 @@ html {
         font-size: var(--fontSize);
     }
 }
-p{
+/*p{
     font-weight: 300;
-}
+}*/
 h1{
     font-size: 48px;
     font-weight: 400;
@@ -102,4 +102,28 @@ select:focus{
     margin: auto;
     transition: var(--transitionAll);
     overflow: hidden;
+}
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300;
+    margin: 20px 0 70px;
+}
+.title:before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 7px;
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translate(-50%, -50%);
+    background: var(--orange);
+}
+.title-green:before{
+    background: var(--sick-green);
+}
+.title-gray:before{
+    background: var(--cool-grey);
 }
