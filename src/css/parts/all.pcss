@@ -4,32 +4,55 @@
 }
 .all__pic{
     text-align: center;
-    margin: 40px 0 60px;
+    margin: 20px 0 30px;
+    @media (--tablet) {
+        margin: 40px 0 60px;
+    }
 }
 .all__text{
     max-width: 1030px;
     margin: 25px auto;
-    font-size: 20px;
+    font-size: 18px;
+    @media (--tablet) {
+        font-size: 20px;
+    }
 }
 .all__text b{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
+    @media (--tablet) {
+        font-size: 24px;
+    }
 }
 .all__info{
     background: var(--white);
-    box-shadow: 0px 11px 30px 0px rgba(0, 0, 5, 0.05);
+    box-shadow: 0 11px 30px 0 rgba(0, 0, 5, 0.05);
     border-radius: 25px;
-    padding: 26px;
+    padding: 20px 10px 16px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     margin: 30px 0;
+    @media (--tablet) {
+        flex-direction: row;
+        padding: 26px;
+    }
 }
 .all__logo{
     flex: 0 0 64px;
-    margin-right: 46px;
+    margin-bottom: 15px;
+    @media (--tablet) {
+        margin-bottom: 0;
+        margin-right: 46px;
+    }
 }
 .all__body{
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
+    @media (--tablet) {
+        text-align: left;
+        font-size: 20px;
+    }
 }
 .all__btn{
     text-align: center;

@@ -2,8 +2,11 @@
     padding: 40px 0 60px;
 }
 .why__text{
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 50px;
+    @media (--tablet){
+        font-size: 24px;
+    }
 }
 .why__list{
     display: flex;
@@ -20,7 +23,7 @@
     @media (--tablet){
         display: block;
         margin: 18px;
-        flex: 1 1 230px;
+        flex: 1 1 240px;
     }
 }
 .why__pic{
@@ -50,7 +53,7 @@
     display: flex;
     text-align: start;
     @media (--tablet){
-        padding-left: 0;
+        padding: 0 15px;
         display: block;
         text-align: center;
     }

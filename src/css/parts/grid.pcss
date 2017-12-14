@@ -70,7 +70,6 @@ b{
     max-width: 478px;
     padding: 0 8px;
     margin: auto;
-    box-sizing: border-box;
     @media (--tablet){
         max-width: 768px;
         padding: 0 10px;
@@ -91,6 +90,10 @@ input[type=text]:focus{
     box-shadow: 0 0 10px 0 #fff9d1;
     outline: none;
 }
+button{
+    font-family: var(--fontFamily);
+    font-weight: 100;
+}
 select:focus{
     box-shadow: 0 0 10px 0 #fff9d1;
     outline: none;
@@ -106,9 +109,20 @@ select:focus{
 .title{
     position: relative;
     text-align: center;
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 300;
     margin: 20px 0 70px;
+    @media (--tablet) {
+        font-size: 48px;
+    }
+}
+.title span{
+    display: block;
+    font-size: 24px;
+    margin: 10px 0 0;
+    @media (--tablet) {
+        font-size: 32px;
+    }
 }
 .title:before{
     content: '';
