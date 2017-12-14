@@ -1,11 +1,24 @@
 .flood{
     background: #fafafa;
-    padding: 70px 0 0;
+    padding: 40px 0 0;
+    background-size: unset;
+    @media (--tablet) {
+        padding: 50px 0 0;
+    }
+    @media (--desktop) {
+        padding: 70px 0 0;
+    }
 }
 .flood__text{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
-    margin: 0 0 ;
+    margin: 0 0 20px;
+    @media (--tablet) {
+        font-size: 20px;
+    }
+    @media (--desktop) {
+        font-size: 24px;
+    }
 }
 .flood__text p{
     margin: 0;

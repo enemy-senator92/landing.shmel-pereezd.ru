@@ -22,19 +22,19 @@
                             <p class="form__text">С чего начать и сколько стоит? Как сэкономить, но получить? Хочешь узнать, что такое тонаж и как упаковать любимый фикус? От тебя у нас нет секретов - перезвоним и все расскажем!</p>
                         </div>
                         <div class="form__body">
-                            <form action="" class="form__form">
+                            <form id="offerForm" method="get" action="" class="form__form" data-validate>
                                 <div class="form__one">
                                     <label for="text1" class="form__label">Ваше имя</label>
-                                    <input id="text1" type="text" class="form__element form__element-input">
+                                    <input id="text1" type="text" class="form__element form__element-input" name="VISITOR_NAME" required>
                                 </div>
                                 <div class="form__one">
                                     <label for="text2" class="form__label">Ваш телефон</label>
-                                    <input id="text2" type="tel" class="form__element form__element-input">
+                                    <input id="text2" type="tel" class="form__element form__element-input" name="VISITOR_PHONE" required>
                                 </div>
                                 <div class="form__one">
                                     <div class="check_inline">
-                                        <input type="checkbox" class="check_inline__input" name="check_inline1" value="check_inline1" id="radio_3" checked>
-                                        <label for="radio_3" class="check_inline__label">
+                                        <input type="checkbox" class="check_inline__input" name="check_policy" value="policy_yes" id="policy1" checked required>
+                                        <label for="policy1" class="check_inline__label">
                                             <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" class="check_inline__icon checkbox">
                                                 <rect class="checkbox__rect" width="100%" height="100%"></rect>
                                                 <polyline class="checkbox__checked" points="11,20.053 16.964,26.018 30.385,12.598"></polyline>
@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
                                 <div class="form__one">
-                                    <button class="btn btn-width">Позвоните мне</button>
+                                    <button class="btn btn-width" type="submit" name="s">Позвоните мне</button>
                                 </div>
                             </form>
                         </div>
@@ -59,7 +59,14 @@
             <div class="flood__text">
                 <p>Не бойся, <span>МЫ С ТОБОЙ!</span> Мы - твой друг, товарищ и брат по переезду, твой верный защитник в это непростое время. Мы не дадим тебя в обиду ни стрессам, ни панике. Хаос не пройдет! Все будет по плану. <span>ТОЧНО</span>, как в аптере, <span>АККУРАТНО</span>, как в КБ Королёва и <span>В СРОК!</span></p>
             </div>
-            <div class="flood__pic"><img src="img/flood_bg.jpg" srcset="img/flood_bg@2x.jpg 2x, img/flood_bg@3x.jpg 3x" alt="" class="flood__img"></div>
+            <div class="flood__pic">
+                <picture>
+                    <source srcset="img/flood480.jpg" media="(max-width: 768px)">
+                    <source srcset="img/flood900.jpg" media="(max-width: 1024px)">
+                    <img src="img/flood_bg.jpg" srcset="img/flood_bg@2x.jpg 2x, img/flood_bg@3x.jpg 3x" alt="" class="flood__img">
+                </picture>
+
+            </div>
         </div>
     </div>
     <div class="pro">
@@ -521,17 +528,18 @@
     </div>
     <div class="all">
         <div class="box">
-            <p class="title title-green">Не все переезды одинаковые</p>
+            <p class="title title-green">«Шмелиный» переезд - переезду рознь!</p>
             <div class="all__pic"><img src="img/all_pic.png" srcset="img/all_pic@2x.png 2x, img/all_pic@3x.png 3x" alt="" class="all__img"></div>
             <div class="all__content">
-                <p class="all__text"><b>Основная проблема подавляющего большинства сервисов по переезду - непрозрачная ценовая политика.</b></p>
-                <p class="all__text">Несмотря на предоставление компаниями тарифных планов, обещания "конечной цены", крайне редко итоговый бюджет переезда соответствует спланированному ранее на переговорах с менеджером. Причина такой ситуации - политика недомолвок со стороны менеджеров на доплаты за те или иные сервисы. В результате, при первоначальной заманчивой цене, конечная стоимость услуги полностью теряет свою привлекательность. А из-за непредвиденных ранее дополнительных финансовых затрат, положительное впечатление от переезда может и вовле улетучиться, вызывая дополнительные стрессы и переживания.</p>
-                <div class="all__info">
+                <p class="all__text"><b>Ошибки менеджеров, дополнительные платежи, о которых тебе не сказали сразу, несоразмерно большая машина или же, напротив, слишком маленькая и, плюс, две поездки вместо одной. Поломки по дороге, поцарапанная мебель, разбитая ваза и сломанный фикус. К сожалению все это случается. Но! НЕ У НАС!</b></p>
+                <p class="all__text"><span>МЫ ДОРОЖИМ ТОБОЙ</span>, как собой, твоим шкафом, как своим. Нет, даже больше, чем собственным! Потому что, если вдруг что, тебе обязательно будет выплачена компенсация за каждую царапину на мебели по нашей вине. Наши цены неизменны с момента составления сметы, все затраты учтены сразу, маршруты надежны и проложены логистами, а сотрудники прекрасны.</p>
+                <p class="all__text">Это - наш капитал, самый важный и ценный, из того, что мы заработали и накопили за долгие годы работы сфере транспортных перевозок!</p>
+                <p class="all__text"></p>
+                <!--<div class="all__info">
                     <div class="all__logo"><img src="img/logo.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" alt="" class="all__img"></div>
                     <div class="all__body">В компании «Шмель Переезд» такой подход к формированию ценовой политики исключен - бюджет формируется сразу и 	предельно прозрачно.</div>
-                </div>
-                <p class="all__text">Да, в первые минуты знакомства с компанией, Вам возможно покажется предложение по переезду несколько выше, чем у конкурентов. Однако, если вы проведете внимательное сравнение полного объема сервисов и услуг, вам станет очевидно, что ценовая политика максимально честна по отношению к собственным клиентам.</p>
-                <p class="all__text"><b>Мы дорожим своей репутацией и доверием наших клиентов.</b></p>
+                </div>-->
+                <p class="all__text">Можно ли найти цены ниже наших? Думаем, да. Но что стоит за низкой ценой и какой она станет в конце пути - это очень большой, и даже, больной вопрос.Честность - наше кредо. Мы не разводим кроликов, мы перевозим грузы.</p>
             </div>
             <div class="all__btn">
                 <button class="btn btn-width">Позвонить</button>
@@ -540,7 +548,7 @@
     </div>
     <div class="data">
         <div class="box">
-            <p class="title">Некоторые факты</p>
+            <p class="title">Факты и цифры</p>
             <div class="data__list">
                 <div class="data__item">
                     <div class="data__pic"><img src="img/autopark.svg" alt="" class="data__img data__img-autopark"></div>
@@ -676,7 +684,7 @@
     </div>
     <div class="total">
         <div class="box">
-            <p class="title title-green">Итак:<span>Каким образом осуществляется переезд...</span></p>
+            <p class="title title-green">Итак,<span>Твой план переезда:</span></p>
             <div class="total__pic">
                 <img src="img/total.svg" alt="" class="total__img">
             </div>
@@ -695,7 +703,7 @@
                 </section>
                 <section data-accordion class="accordion__one">
                     <button data-control type="button" class="accordion__head">
-                        <span class="accordion__title">Планирование и просчет переезда с менеджером</span>
+                        <span class="accordion__title">Упаковка имущества</span>
                         <span class="accordion__button accordion__button-opener">Развернуть</span>
                         <span class="accordion__button accordion__button-bucket">Свернуть</span>
                     </button>
@@ -707,7 +715,7 @@
                 </section>
                 <section data-accordion class="accordion__one">
                     <button data-control type="button" class="accordion__head">
-                        <span class="accordion__title">Планирование и просчет переезда с менеджером</span>
+                        <span class="accordion__title">Сборка-разборка мебели</span>
                         <span class="accordion__button accordion__button-opener">Развернуть</span>
                         <span class="accordion__button accordion__button-bucket">Свернуть</span>
                     </button>
@@ -719,7 +727,19 @@
                 </section>
                 <section data-accordion class="accordion__one">
                     <button data-control type="button" class="accordion__head">
-                        <span class="accordion__title">Планирование и просчет переезда с менеджером</span>
+                        <span class="accordion__title">Транспортировка</span>
+                        <span class="accordion__button accordion__button-opener">Развернуть</span>
+                        <span class="accordion__button accordion__button-bucket">Свернуть</span>
+                    </button>
+                    <div data-content class="accordion__body">
+                        <article class="accordion__content">
+                            Оплата работы специалиста по сборке и разборке мебели обычно осуществляется по часам. В данном случае можно быть уверенным, что фурнитура попадет на новое место жительства в полной комплектации, зеркала и стеклянные полки будут надежно защищены, ящики и дверцы закреплены, а острые углы заклеены скотчем.
+                        </article>
+                    </div>
+                </section>
+                <section data-accordion class="accordion__one">
+                    <button data-control type="button" class="accordion__head">
+                        <span class="accordion__title">Дополнительные услуги</span>
                         <span class="accordion__button accordion__button-opener">Развернуть</span>
                         <span class="accordion__button accordion__button-bucket">Свернуть</span>
                     </button>
@@ -746,7 +766,19 @@
             <div class="accordion">
                 <section data-accordion class="accordion__one">
                     <button data-control type="button" class="accordion__head">
-                        <span class="accordion__title">Планирование и просчет переезда с менеджером</span>
+                        <span class="accordion__title">Предварительная подготовка</span>
+                        <span class="accordion__button accordion__button-opener">Развернуть</span>
+                        <span class="accordion__button accordion__button-bucket">Свернуть</span>
+                    </button>
+                    <div data-content class="accordion__body">
+                        <article class="accordion__content">
+                            Прежде всего, следует заняться предварительной подготовкой этого нелегкого дела. Спланировать количество крупных вещей, которые будут перевозиться, избавиться от ненужных предметов, запастись коробками, уложить мелкие вещи в отдельные коробки. Начните подготовку за 1-2 недели до переезда. Отсортируйте ненужные вещи и избавьтесь от них.
+                        </article>
+                    </div>
+                </section>
+                <section data-accordion class="accordion__one">
+                    <button data-control type="button" class="accordion__head">
+                        <span class="accordion__title">Упаковка мелких предметов</span>
                         <span class="accordion__button accordion__button-opener">Развернуть</span>
                         <span class="accordion__button accordion__button-bucket">Свернуть</span>
                     </button>
@@ -758,7 +790,7 @@
                 </section>
                 <section data-accordion class="accordion__one">
                     <button data-control type="button" class="accordion__head">
-                        <span class="accordion__title">Планирование и просчет переезда с менеджером</span>
+                        <span class="accordion__title">Упаковка бытовой техники</span>
                         <span class="accordion__button accordion__button-opener">Развернуть</span>
                         <span class="accordion__button accordion__button-bucket">Свернуть</span>
                     </button>
@@ -770,7 +802,7 @@
                 </section>
                 <section data-accordion class="accordion__one">
                     <button data-control type="button" class="accordion__head">
-                        <span class="accordion__title">Планирование и просчет переезда с менеджером</span>
+                        <span class="accordion__title">Упаковка оргтехники и предметов быта</span>
                         <span class="accordion__button accordion__button-opener">Развернуть</span>
                         <span class="accordion__button accordion__button-bucket">Свернуть</span>
                     </button>
@@ -782,7 +814,7 @@
                 </section>
                 <section data-accordion class="accordion__one">
                     <button data-control type="button" class="accordion__head">
-                        <span class="accordion__title">Планирование и просчет переезда с менеджером</span>
+                        <span class="accordion__title">Упаковка крупногабаритной мебели</span>
                         <span class="accordion__button accordion__button-opener">Развернуть</span>
                         <span class="accordion__button accordion__button-bucket">Свернуть</span>
                     </button>

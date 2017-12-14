@@ -6,12 +6,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header__slogan{
-    font-size: 30px;
-    max-width: 315px;
-    margin: 0 8px;
-    line-height: 30px;
+    font-size: 18px;
+    max-width: 170px;
+    margin: 0 0 10px auto;
+    line-height: 18px;
+    text-align: right;
+    @media (--tablet) {
+        max-width: 200px;
+        margin: 0 8px;
+        text-align: left;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    @media (--desktop) {
+        font-size: 30px;
+        max-width: 315px;
+        line-height: 30px;
+    }
 }
 .logo{
     margin-right: 8px;
@@ -25,19 +39,44 @@
 }
 .logo__img-mobile{
     display: inherit;
-    width: 80px;
+    max-width: 100px;
     @media (--tablet){
         display: none;
     }
 }
 .top_phone{
-    font-size: 30px;
+    font-size: 24px;
     margin: 0;
     white-space: nowrap;
+    @media (--tablet) {
+        font-size: 30px;
+    }
 }
 .top_jobs{
     font-size: 14px;
     margin: 0;
     color: var(--cool-grey);
 }
-
+.header__call{
+    margin-left: 8px;
+}
+.header__call .btn{
+    text-indent: -999px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: url("../img/icon_phone.svg") 50% 50% no-repeat var(--orange);
+    background-size: 18px 18px;
+    @media (--desktop) {
+        border-radius: 4px;
+        background: var(--orange);
+        color: var(--white);
+        padding: 10px 24px;
+        text-indent: inherit;
+        width: inherit;
+        height: inherit;
+    }
+}

@@ -32,16 +32,20 @@
     width: 100%;
     box-sizing: border-box;
 }
+.form__element.error{
+    box-shadow: 0 0 8px 0 #ffd6db;
+    background: rgba(255, 214, 219, 0.3);
+}
 .form__element:focus{
     box-shadow: 0 0 10px 0 #fff9d1;
     outline-color: #fff9d1;
 }
+.form__element.error:focus{
+    background: rgba(255, 214, 219, 0.1);
+}
 .form__element-textarea{
     min-height: 120px;
     resize: none;
-}
-.form__element-error{
-    box-shadow: 0 0 8px 0 #ffd6db;
 }
 .form__one{
     margin-top: 24px;
@@ -86,6 +90,9 @@
     flex: 0 0 16px;
     margin-top: 4px;
 }
+.check_inline__input.error + .check_inline__label .check_inline__icon{
+    box-shadow: 0 0 8px 0 #ffd6db;
+}
 .checkbox{
     width: 100%;
 }
@@ -95,7 +102,10 @@
     stroke-width: 2px;
     transition: var(--transitionAll);
 }
-.checkbox-check .checkbox__rect,
+.check_inline__input.error + .check_inline__label .checkbox__rect{
+    stroke: #ffd6db;
+    fill: #ffd6db;
+}
 .check_inline__input:checked + .check_inline__label .checkbox__rect{
     fill: var(--orange);
     stroke: var(--orange);

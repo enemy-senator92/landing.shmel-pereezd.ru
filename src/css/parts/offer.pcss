@@ -3,25 +3,50 @@
     padding: 36px 0;
 }
 .offer__wrap{
-    background: url("../img/offer_bg.png") 0 70% no-repeat;
-    background-size: 75% auto;
+    background: url("../img/offer_bg.png") 50% 17% no-repeat;
+    background-size: 100% auto;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    flex-direction: column;
+    @media (--tablet) {
+        background-position: 50% 20%;
+    }
+    @media (--desktop) {
+        background-position: 0 70%;
+        background-size: 75% auto;
+        flex-direction: row;
+    }
 }
 .offer__right{
-    flex: 0 0 370px;
+    flex: auto;
+    @media (--tablet) {
+        flex: 0 0 370px;
+    }
 }
 .offer__left{
     position: relative;
     flex: auto;
 }
 .offer__title{
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 24px;
+    line-height: 24px;
     font-weight: 100;
     color: var(--white);
     max-width: 685px;
+    text-align: center;
+    padding-bottom: 270px;
+    @media (--tablet) {
+        padding-bottom: 335px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    @media (--desktop) {
+        padding-bottom: 0;
+        font-size: 50px;
+        line-height: 55px;
+        text-align: left;
+    }
 }
 .offer__title p{
     margin: 0;
@@ -32,22 +57,64 @@
 }
 .offer__men{
     background: url("../img/offer_men.png") no-repeat;
-    width: 420px;
-    height: 442px;
+    background-size: 210px 217px;
+    width: 210px;
+    height: 217px;
     position: absolute;
-    bottom: -36px;
-    right: 5px;
+    bottom: 0;
+    right: -18px;
+    @media (--tablet) {
+        background-size: 340px 335px;
+        width: 340px;
+        height: 335px;
+        bottom: 0;
+        right: 0;
+    }
+    @media (--desktop) {
+        background-size: auto;
+        width: 420px;
+        height: 442px;
+        bottom: -36px;
+        right: 5px;
+    }
 }
 .offer__men_text{
     position: absolute;
-    bottom: 33px;
-    right: 122px;
+    bottom: 10px;
+    right: 19px;
     background: var(--white);
     border-radius: 32px 6px 32px 32px;
     font-size: 24px;
     color: var(--sick-green);
-    padding: 32px;
-    width: 309px;
+    padding: 17px;
+    width: 283px;
     box-sizing: border-box;
     text-align: center;
+    @media (--desktop) {
+        width: 309px;
+        bottom: 50px;
+        right: 122px;
+        padding: 26px;
+    }
+    @media (--desktop) {
+        bottom: 33px;
+        right: 122px;
+        padding: 32px;
+    }
+}
+.offer__right .form__form{
+    @media (--tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+    @media (--desktop) {
+        display: block;
+    }
+}
+.offer__right .form__one{
+    @media (--tablet) {
+        flex: 1 1 calc(50% - 16px);
+        margin: 18px 8px 0;
+    }
 }

@@ -5,3 +5,4 @@
 //= ../lib/fancybox/jquery.fancybox.min.js
 //= ../lib/owlCarousel/owl.carousel.min.js
 //= ../lib/jquery.accordion/jquery.accordion.js
+//= ../lib/jquery.validate.js
