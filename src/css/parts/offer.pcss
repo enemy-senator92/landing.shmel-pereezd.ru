@@ -90,16 +90,33 @@
     width: 283px;
     box-sizing: border-box;
     text-align: center;
-    @media (--desktop) {
+    @media (--tablet) {
         width: 309px;
         bottom: 50px;
-        right: 122px;
+        right: 62px;
         padding: 26px;
     }
     @media (--desktop) {
         bottom: 33px;
         right: 122px;
         padding: 32px;
+    }
+}
+.offer__men_text:before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 50px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid var(--white);
+    @media (--tablet) {
+        right: 70px;
+    }
+    @media (--desktop) {
+        right: 50px;
     }
 }
 .offer__right .form__form{

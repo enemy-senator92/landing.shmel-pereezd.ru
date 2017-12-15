@@ -4,40 +4,40 @@
         <div class="footer__wrap">
             <div class="footer__left">
                 <div class="footer__phone">
-                    <p class="top_phone">8 (495) 221-29-09</p>
+                    <p class="top_phone"><a href="tel:+74952212909">8 (495) 221-29-09</a></p>
                     <p class="top_jobs">Каждый день с  9:00 до 20:00</p>
                 </div>
                 <div class="footer__btn">
-                    <button class="btn" type="button">Позвонить</button>
+                    <button class="btn" type="button" data-modal data-url="call.html">Позвонить</button>
                 </div>
                 <div class="contacts">
                     <a href="skype:shmel-pereezd2" class="contacts__wrap">
                         <span class="contacts__icon">
-                            <img src="img/icon_skype.svg" alt="" class="contacts__img">
+                            <img src="/img/icon_skype.svg" alt="" class="contacts__img">
                         </span>
                         <span class="contacts__text">shmel-pereezd2</span>
                     </a>
                     <a href="mailto:info@shmel-pereezd.ru" class="contacts__wrap">
                         <span class="contacts__icon">
-                            <img src="img/icon_mail.svg" alt="" class="contacts__img">
+                            <img src="/img/icon_mail.svg" alt="" class="contacts__img">
                         </span>
                         <span class="contacts__text">info@shmel-pereezd.ru</span>
                     </a>
                     <span class="contacts__wrap">
                         <span class="contacts__icon">
-                            <img src="img/icon_compas.svg" alt="" class="contacts__img">
+                            <img src="/img/icon_compas.svg" alt="" class="contacts__img">
                         </span>
                         <span class="contacts__text">Наш адрес: 105122, г. Москва, Щелковское шоссе, дом 5, стр.1</span>
                     </span>
                 </div>
                 <div class="footer__copy">
-                    <p>© 2015 Транспортная компания «Шмель» - автомобильные грузоперевозки по Москве и России.</p>
+                    <p>© 2017 Транспортная компания «Шмель» - автомобильные грузоперевозки по Москве и России.</p>
                     <p>Информация на сайте носит справочный характер и не является публичной офертой</p>
                 </div>
                 <div class="footer__creator">
                     <a href="https://soobwa.ru/" class="creator" target="_blank">
                         <span class="creator__text">Создание и продвижение</span>
-                        <img src="img/creator.svg" alt="" class="creator__img">
+                        <img src="/img/creator.svg" alt="" class="creator__img">
                     </a>
                 </div>
             </div>
@@ -48,6 +48,12 @@
                     </div>
                     <div class="form__body">
                         <form id="footerForm" method="get" action="" class="form__form" data-validate>
+                            <div class="form__success success">
+                                <div class="success__pic">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="80" viewBox="0 0 44 44"><path class="success__svg" d="M22 0C9.8 0 0 9.8 0 22s9.8 22 22 22 22-9.8 22-22S34.2 0 22 0zm12.7 15.1l-16 16.6c-.2.2-.4.3-.7.3-.3 0-.6-.1-.7-.3l-7.8-8.4-.2-.2c-.2-.2-.3-.5-.3-.7s.1-.5.3-.7l1.4-1.4c.4-.4 1-.4 1.4 0l.1.1 5.5 5.9c.2.2.5.2.7 0l13.4-13.9h.1c.4-.4 1-.4 1.4 0l1.4 1.4c.4.3.4.9 0 1.3z"></path></svg>
+                                </div>
+                                <p class="success__title">Ваше сообщение<br>успешно отправлено!</p>
+                            </div>
                             <div class="form__one">
                                 <label for="text3" class="form__label">Ваше имя</label>
                                 <input id="text3" type="text" class="form__element form__element-input" name="VISITOR_NAME" required>
@@ -64,7 +70,7 @@
                                             <rect class="checkbox__rect" width="100%" height="100%"></rect>
                                             <polyline class="checkbox__checked" points="11,20.053 16.964,26.018 30.385,12.598"></polyline>
                                         </svg>
-                                        <span class="check_inline__text">Нажимая на кнопку "Позвонить", я даю согласие на обработку персональных данных и соглашаюсь c условиями договора-оферты и политикой конфиденциальности</span>
+                                        <span class="check_inline__text">Нажимая на кнопку "Позвонить", я даю согласие на обработку персональных данных и соглашаюсь c условиями договора-оферты и <a href="/policy.html" target="_blank">политикой конфиденциальности</a></span>
                                     </label>
                                 </div>
                             </div>

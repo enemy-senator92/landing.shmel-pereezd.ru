@@ -9,12 +9,39 @@ function validateForm() {
             $(this).addClass('validate').addClass('validate-'+i);
             $(".validate-"+i).validate({
                 errorPlacement: function(error, element) {
-                    console.log(error);
+                    //console.log(element);
                 },
                 submitHandler: function(form) {
-                    console.log(form);
+                    //console.log(form);
+                    sendForm($(form).serialize(), $(form));
                 }
             });
+        }
+    });
+}
+
+// отправка писем AJAX
+function sendForm(dataSend, form) {
+    $.ajax({
+        type: "GET",
+        url: "/ajax.php?ajax=Y",
+        data: dataSend,
+        dataType: "json",
+        success: function(data, type) {
+            if (data.ERR == 1) {
+                console.log(data.MESSAGE);
+            }
+            else if (data.ERR == 2) {
+                // валидация выше, поэтому тут все норм
+                console.log(data.MESSAGE);
+            }
+            else if (data.OK == 1) {
+                //console.log(data.MESSAGE);
+                $(form).find('.form__success').addClass('form__success-visible');
+            }
+            else{
+                alert("Произошла ошибка, попробуйте повторить позже.");
+            }
         }
     });
 }

@@ -23,6 +23,12 @@
                         </div>
                         <div class="form__body">
                             <form id="offerForm" method="get" action="" class="form__form" data-validate>
+                                <div class="form__success success">
+                                    <div class="success__pic">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="80" viewBox="0 0 44 44"><path class="success__svg" d="M22 0C9.8 0 0 9.8 0 22s9.8 22 22 22 22-9.8 22-22S34.2 0 22 0zm12.7 15.1l-16 16.6c-.2.2-.4.3-.7.3-.3 0-.6-.1-.7-.3l-7.8-8.4-.2-.2c-.2-.2-.3-.5-.3-.7s.1-.5.3-.7l1.4-1.4c.4-.4 1-.4 1.4 0l.1.1 5.5 5.9c.2.2.5.2.7 0l13.4-13.9h.1c.4-.4 1-.4 1.4 0l1.4 1.4c.4.3.4.9 0 1.3z"></path></svg>
+                                    </div>
+                                    <p class="success__title">Ваше сообщение<br>успешно отправлено!</p>
+                                </div>
                                 <div class="form__one">
                                     <label for="text1" class="form__label">Ваше имя</label>
                                     <input id="text1" type="text" class="form__element form__element-input" name="VISITOR_NAME" required>
@@ -39,7 +45,7 @@
                                                 <rect class="checkbox__rect" width="100%" height="100%"></rect>
                                                 <polyline class="checkbox__checked" points="11,20.053 16.964,26.018 30.385,12.598"></polyline>
                                             </svg>
-                                            <span class="check_inline__text">Нажимая на кнопку "Позвонить", я даю согласие на обработку персональных данных и соглашаюсь c условиями договора-оферты и политикой конфиденциальности</span>
+                                            <span class="check_inline__text">Нажимая на кнопку "Позвонить", я даю согласие на обработку персональных данных и соглашаюсь c условиями договора-оферты и <a href="/policy.html" target="_blank">политикой конфиденциальности</a></span>
                                         </label>
                                     </div>
                                 </div>
@@ -61,9 +67,9 @@
             </div>
             <div class="flood__pic">
                 <picture>
-                    <source srcset="img/flood480.jpg" media="(max-width: 768px)">
-                    <source srcset="img/flood900.jpg" media="(max-width: 1024px)">
-                    <img src="img/flood_bg.jpg" srcset="img/flood_bg@2x.jpg 2x, img/flood_bg@3x.jpg 3x" alt="" class="flood__img">
+                    <source srcset="/img/flood480.jpg" media="(max-width: 768px)">
+                    <source srcset="/img/flood900.jpg" media="(max-width: 1024px)">
+                    <img src="/img/flood_bg.jpg" srcset="/img/flood_bg@2x.jpg 2x, /img/flood_bg@3x.jpg 3x" alt="" class="flood__img">
                 </picture>
 
             </div>
@@ -78,12 +84,12 @@
                         <p>Без ложной скромности - мы <span>АЛЬФА</span> и <span>ОМЕГА</span> переезда. Для тебя переезд начнется с азбуки, для нас позади сотни томов теории и годы практики. Мы точно знаем - нет праздника лучше <span>НОВОСЕЛЬЯ</span>! День рождение нового дома - новый день рождения всей семьи. Готовься к празднику и больше ни о чем не думай. Остальное мы <span>БЕРЕМ НА СЕБЯ</span>. Берем, разбираем и упаковываем, везем в твой новый дом!</p>
                     </div>
                     <div class="pro__btn">
-                        <button class="btn btn-width" type="button">Звони сейчас!</button>
+                        <button class="btn btn-width" type="button" data-modal data-url="call.html">Звони сейчас!</button>
                     </div>
                 </div>
                 <div class="pro__video">
                     <a href="video/pro.mp4" data-fancybox data-type="iframe">
-                        <img src="img/video.jpg" srcset="img/video@2x.jpg 2x, img/video@3x.jpg 3x" alt="" class="pro__video_img">
+                        <img src="/img/video.jpg" srcset="/img/video@2x.jpg 2x, /img/video@3x.jpg 3x" alt="" class="pro__video_img">
                     </a>
                 </div>
             </div>
@@ -94,7 +100,7 @@
             <p class="title">«Шмель» спешит на помощь!</p>
             <div class="service">
                 <div class="service__pic">
-                    <img src="img/deliver.svg" alt="" class="service__img">
+                    <img src="/img/deliver.svg" alt="" class="service__img">
                 </div>
                 <div class="service__content">
                     <p class="service__name">Переезды - пакетные предложения или индивидуальный расчет</p>
@@ -112,15 +118,15 @@
                         </p>
                     </div>
                     <div class="service__btn">
-                        <button class="btn">Уже звони!</button>
+                        <button class="btn" type="button" data-modal data-url="call.html">Уже звони!</button>
                         <span class="service__btn_seporator">или закажи<br>бесплатно</span>
-                        <button class="btn btn-white">Волшебного менеджера на дома!</button>
+                        <button class="btn btn-white" type="button" data-modal data-url="call.html">Волшебного менеджера на дома!</button>
                     </div>
                 </div>
             </div>
             <div class="service">
                 <div class="service__pic">
-                    <img src="img/deliveryboy.svg" alt="" class="service__img">
+                    <img src="/img/deliveryboy.svg" alt="" class="service__img">
                 </div>
                 <div class="service__content">
                     <p class="service__name">Грузчики и монтажники</p>
@@ -140,13 +146,13 @@
                         </p>
                     </div>
                     <div class="service__btn">
-                        <button class="btn">Позвонить</button>
+                        <button class="btn" type="button" data-modal data-url="call.html">Позвонить</button>
                     </div>
                 </div>
             </div>
             <div class="service">
                 <div class="service__pic">
-                    <img src="img/transport.svg" alt="" class="service__img">
+                    <img src="/img/transport.svg" alt="" class="service__img">
                 </div>
                 <div class="service__content">
                     <p class="service__name">Транспорт</p>
@@ -165,13 +171,13 @@
                         </p>
                     </div>
                     <div class="service__btn">
-                        <button class="btn">Позвонить</button>
+                        <button class="btn" type="button" data-modal data-url="call.html">Позвонить</button>
                     </div>
                 </div>
             </div>
             <div class="service">
                 <div class="service__pic">
-                    <img src="img/package.svg" alt="" class="service__img">
+                    <img src="/img/package.svg" alt="" class="service__img">
                 </div>
                 <div class="service__content">
                     <p class="service__name">Упаковочный материал</p>
@@ -186,7 +192,7 @@
                         <li><span>Аксесуары (перчатки, диспенсеры для скотча, канцелярские ножи)</span></li>
                     </ul>
                     <div class="service__btn">
-                        <button class="btn">Позвонить</button>
+                        <button class="btn" type="button" data-modal data-url="call.html">Позвонить</button>
                     </div>
                 </div>
             </div>
@@ -202,40 +208,40 @@
             </div>
             <div class="why__list">
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/control.svg" alt="" class="why__img"></div>
+                    <div class="why__pic"><img src="/img/control.svg" alt="" class="why__img"></div>
                     <p class="why__name">Строгий контроль сотрудников</p>
                 </div>
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/cargo-ins.svg" alt="" class="why__img"></div>
+                    <div class="why__pic"><img src="/img/cargo-ins.svg" alt="" class="why__img"></div>
                     <p class="why__name">Страхование грузов</p>
                 </div>
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/gps.svg" alt="" class="why__img"></div>
+                    <div class="why__pic"><img src="/img/gps.svg" alt="" class="why__img"></div>
                     <p class="why__name">Отслеживание маршрутов передвижения</p>
                 </div>
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/service.svg" alt="" class="why__img"></div>
+                    <div class="why__pic"><img src="/img/service.svg" alt="" class="why__img"></div>
                     <p class="why__name">Отзывчивый сервис и служба поддержки</p>
                 </div>
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/paceges.svg" alt="" class="why__img" style="width: 90px;"></div>
+                    <div class="why__pic"><img src="/img/paceges.svg" alt="" class="why__img" style="width: 90px;"></div>
                     <p class="why__name">Магазин упаковки и сопутствующих товаров</p>
                 </div>
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/cars.svg" alt="" class="why__img" style="width: 110px"></div>
+                    <div class="why__pic"><img src="/img/cars.svg" alt="" class="why__img" style="width: 110px"></div>
                     <p class="why__name">Мультитоннажный автопарк</p>
                 </div>
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/piano.svg" alt="" class="why__img" style="width: 70px"></div>
+                    <div class="why__pic"><img src="/img/piano.svg" alt="" class="why__img" style="width: 70px"></div>
                     <p class="why__name">Специализированные перевозки</p>
                 </div>
                 <div class="why__item">
-                    <div class="why__pic"><img src="img/packeg_man.svg" alt="" class="why__img" style="width: 86px"></div>
+                    <div class="why__pic"><img src="/img/packeg_man.svg" alt="" class="why__img" style="width: 86px"></div>
                     <p class="why__name">Доставка заказов из магазина упаковки</p>
                 </div>
             </div>
             <div class="why__btn">
-                <button class="btn" type="button">Хочешь знать больше? Звони!</button>
+                <button class="btn" type="button" data-modal data-url="call.html">Хочешь знать больше? Звони!</button>
             </div>
         </div>
     </div>
@@ -247,14 +253,14 @@
             </div>
             <div class="choice owl-carousel">
                 <div class="choice_item">
-                    <div class="choice_item__pic"><img src="img/1cat.svg" alt="" class="choice_item__img" width="90"></div>
+                    <div class="choice_item__pic"><img src="/img/1cat.svg" alt="" class="choice_item__img" width="90"></div>
                     <div class="choice_item__info">
                         <div class="choice_item__info_one">
-                            <img src="img/vol.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/vol.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">9м³</span>
                         </div>
                         <div class="choice_item__info_one">
-                            <img src="img/weight.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/weight.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">1.5т</span>
                         </div>
                     </div>
@@ -287,20 +293,20 @@
                     </div>
                     <div class="choice_item__pass">
                         <div class="pass">
-                            <img src="img/propusk.svg" alt="" class="pass__img">
+                            <img src="/img/propusk.svg" alt="" class="pass__img">
                             <span class="pass__text">Пропуск в центр</span>
                         </div>
                     </div>
                 </div>
                 <div class="choice_item">
-                    <div class="choice_item__pic"><img src="img/2cat.svg" alt="" class="choice_item__img" width="100"></div>
+                    <div class="choice_item__pic"><img src="/img/2cat.svg" alt="" class="choice_item__img" width="100"></div>
                     <div class="choice_item__info">
                         <div class="choice_item__info_one">
-                            <img src="img/vol.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/vol.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">9м³</span>
                         </div>
                         <div class="choice_item__info_one">
-                            <img src="img/weight.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/weight.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">1.5т</span>
                         </div>
                     </div>
@@ -333,20 +339,20 @@
                     </div>
                     <div class="choice_item__pass">
                         <div class="pass">
-                            <img src="img/propusk.svg" alt="" class="pass__img">
+                            <img src="/img/propusk.svg" alt="" class="pass__img">
                             <span class="pass__text">Пропуск в центр</span>
                         </div>
                     </div>
                 </div>
                 <div class="choice_item">
-                    <div class="choice_item__pic"><img src="img/3cat.svg" alt="" class="choice_item__img" width="111"></div>
+                    <div class="choice_item__pic"><img src="/img/3cat.svg" alt="" class="choice_item__img" width="111"></div>
                     <div class="choice_item__info">
                         <div class="choice_item__info_one">
-                            <img src="img/vol.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/vol.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">9м³</span>
                         </div>
                         <div class="choice_item__info_one">
-                            <img src="img/weight.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/weight.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">1.5т</span>
                         </div>
                     </div>
@@ -379,20 +385,20 @@
                     </div>
                     <div class="choice_item__pass">
                         <div class="pass">
-                            <img src="img/propusk.svg" alt="" class="pass__img">
+                            <img src="/img/propusk.svg" alt="" class="pass__img">
                             <span class="pass__text">Пропуск в центр</span>
                         </div>
                     </div>
                 </div>
                 <div class="choice_item">
-                    <div class="choice_item__pic"><img src="img/5cat.svg" alt="" class="choice_item__img" width="111"></div>
+                    <div class="choice_item__pic"><img src="/img/5cat.svg" alt="" class="choice_item__img" width="111"></div>
                     <div class="choice_item__info">
                         <div class="choice_item__info_one">
-                            <img src="img/vol.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/vol.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">9м³</span>
                         </div>
                         <div class="choice_item__info_one">
-                            <img src="img/weight.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/weight.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">1.5т</span>
                         </div>
                     </div>
@@ -425,20 +431,20 @@
                     </div>
                     <div class="choice_item__pass">
                         <div class="pass pass-hidden">
-                            <img src="img/propusk.svg" alt="" class="pass__img">
+                            <img src="/img/propusk.svg" alt="" class="pass__img">
                             <span class="pass__text">Пропуск в центр</span>
                         </div>
                     </div>
                 </div>
                 <div class="choice_item">
-                    <div class="choice_item__pic"><img src="img/6cat.svg" alt="" class="choice_item__img" width="130"></div>
+                    <div class="choice_item__pic"><img src="/img/6cat.svg" alt="" class="choice_item__img" width="130"></div>
                     <div class="choice_item__info">
                         <div class="choice_item__info_one">
-                            <img src="img/vol.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/vol.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">9м³</span>
                         </div>
                         <div class="choice_item__info_one">
-                            <img src="img/weight.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/weight.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">1.5т</span>
                         </div>
                     </div>
@@ -471,20 +477,20 @@
                     </div>
                     <div class="choice_item__pass">
                         <div class="pass pass-hidden">
-                            <img src="img/propusk.svg" alt="" class="pass__img">
+                            <img src="/img/propusk.svg" alt="" class="pass__img">
                             <span class="pass__text">Пропуск в центр</span>
                         </div>
                     </div>
                 </div>
                 <div class="choice_item">
-                    <div class="choice_item__pic"><img src="img/7cat.svg" alt="" class="choice_item__img" width="140"></div>
+                    <div class="choice_item__pic"><img src="/img/7cat.svg" alt="" class="choice_item__img" width="140"></div>
                     <div class="choice_item__info">
                         <div class="choice_item__info_one">
-                            <img src="img/vol.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/vol.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">9м³</span>
                         </div>
                         <div class="choice_item__info_one">
-                            <img src="img/weight.svg" alt="" class="choice_item__info_img">
+                            <img src="/img/weight.svg" alt="" class="choice_item__info_img">
                             <span class="choice_item__info_text">1.5т</span>
                         </div>
                     </div>
@@ -517,7 +523,7 @@
                     </div>
                     <div class="choice_item__pass">
                         <div class="pass pass-hidden">
-                            <img src="img/propusk.svg" alt="" class="pass__img">
+                            <img src="/img/propusk.svg" alt="" class="pass__img">
                             <span class="pass__text">Пропуск в центр</span>
                         </div>
                     </div>
@@ -529,20 +535,20 @@
     <div class="all">
         <div class="box">
             <p class="title title-green">«Шмелиный» переезд - переезду рознь!</p>
-            <div class="all__pic"><img src="img/all_pic.png" srcset="img/all_pic@2x.png 2x, img/all_pic@3x.png 3x" alt="" class="all__img"></div>
+            <div class="all__pic"><img src="/img/all_pic.png" srcset="/img/all_pic@2x.png 2x, /img/all_pic@3x.png 3x" alt="" class="all__img"></div>
             <div class="all__content">
                 <p class="all__text"><b>Ошибки менеджеров, дополнительные платежи, о которых тебе не сказали сразу, несоразмерно большая машина или же, напротив, слишком маленькая и, плюс, две поездки вместо одной. Поломки по дороге, поцарапанная мебель, разбитая ваза и сломанный фикус. К сожалению все это случается. Но! НЕ У НАС!</b></p>
                 <p class="all__text"><span>МЫ ДОРОЖИМ ТОБОЙ</span>, как собой, твоим шкафом, как своим. Нет, даже больше, чем собственным! Потому что, если вдруг что, тебе обязательно будет выплачена компенсация за каждую царапину на мебели по нашей вине. Наши цены неизменны с момента составления сметы, все затраты учтены сразу, маршруты надежны и проложены логистами, а сотрудники прекрасны.</p>
                 <p class="all__text">Это - наш капитал, самый важный и ценный, из того, что мы заработали и накопили за долгие годы работы сфере транспортных перевозок!</p>
                 <p class="all__text"></p>
                 <!--<div class="all__info">
-                    <div class="all__logo"><img src="img/logo.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" alt="" class="all__img"></div>
+                    <div class="all__logo"><img src="/img/logo.png" srcset="/img/logo@2x.png 2x, /img/logo@3x.png 3x" alt="" class="all__img"></div>
                     <div class="all__body">В компании «Шмель Переезд» такой подход к формированию ценовой политики исключен - бюджет формируется сразу и 	предельно прозрачно.</div>
                 </div>-->
                 <p class="all__text">Можно ли найти цены ниже наших? Думаем, да. Но что стоит за низкой ценой и какой она станет в конце пути - это очень большой, и даже, больной вопрос.Честность - наше кредо. Мы не разводим кроликов, мы перевозим грузы.</p>
             </div>
             <div class="all__btn">
-                <button class="btn btn-width">Позвонить</button>
+                <button class="btn btn-width" type="button" data-modal data-url="call.html">Позвонить</button>
             </div>
         </div>
     </div>
@@ -551,22 +557,22 @@
             <p class="title">Факты и цифры</p>
             <div class="data__list">
                 <div class="data__item">
-                    <div class="data__pic"><img src="img/autopark.svg" alt="" class="data__img data__img-autopark"></div>
+                    <div class="data__pic"><img src="/img/autopark.svg" alt="" class="data__img data__img-autopark"></div>
                     <p class="data__number">более <span class="data__big">2000</span></p>
                     <p class="data__desc">осуществленных перездов за последние 5 лет</p>
                 </div>
                 <div class="data__item">
-                    <div class="data__pic"><img src="img/rout.svg" alt="" class="data__img data__img-rout"></div>
+                    <div class="data__pic"><img src="/img/rout.svg" alt="" class="data__img data__img-rout"></div>
                     <p class="data__number">более <span class="data__big">700</span> тысяч км/мес</p>
                     <p class="data__desc">в среднем проезжают наши водители по Москве и Подмосковью</p>
                 </div>
                 <div class="data__item">
-                    <div class="data__pic"><img src="img/furnitureconstruct.svg" alt="" class="data__img data__img-furniture"></div>
+                    <div class="data__pic"><img src="/img/furnitureconstruct.svg" alt="" class="data__img data__img-furniture"></div>
                     <p class="data__number">около <span class="data__big">6</span> часов</p>
                     <p class="data__desc">в существляется переезд 1-комнатной квартиры</p>
                 </div>
                 <div class="data__item">
-                    <div class="data__pic"><img src="img/gloves.svg" alt="" class="data__img data__img-gloves"></div>
+                    <div class="data__pic"><img src="/img/gloves.svg" alt="" class="data__img data__img-gloves"></div>
                     <p class="data__number"><span class="data__big">87</span>%</p>
                     <p class="data__desc">положительных отзывов  клиентов о нашей работе</p>
                 </div>
@@ -582,7 +588,7 @@
                         <div class="reviews_item__wrap">
                             <div class="reviews_item__info">
                                 <div class="reviews_item__pic">
-                                    <img src="img/avatar.png" srcset="img/avatar@2x.png 2x, img/avatar@3x.png 3x" alt="" class="reviews_item__img">
+                                    <img src="/img/avatar.png" srcset="/img/avatar@2x.png 2x, /img/avatar@3x.png 3x" alt="" class="reviews_item__img">
                                 </div>
                                 <p class="reviews_item__name">Быстров Арсений</p>
                             </div>
@@ -629,7 +635,7 @@
                         <div class="reviews_item__wrap">
                             <div class="reviews_item__info">
                                 <div class="reviews_item__pic">
-                                    <img src="img/avatar.png" srcset="img/avatar@2x.png 2x, img/avatar@3x.png 3x" alt="" class="reviews_item__img">
+                                    <img src="/img/avatar.png" srcset="/img/avatar@2x.png 2x, /img/avatar@3x.png 3x" alt="" class="reviews_item__img">
                                 </div>
                                 <p class="reviews_item__name">Быстров Арсений</p>
                             </div>
@@ -686,7 +692,7 @@
         <div class="box">
             <p class="title title-green">Итак,<span>Твой план переезда:</span></p>
             <div class="total__pic">
-                <img src="img/total.svg" alt="" class="total__img">
+                <img src="/img/total.svg" alt="" class="total__img">
             </div>
             <div class="accordion">
                 <section data-accordion class="accordion__one">
@@ -754,7 +760,7 @@
                 <p class="total_other__text">Или более наглядно:</p>
                 <div class="total_other__video">
                     <a href="video/pro.mp4" data-fancybox="" data-type="iframe">
-                        <img src="img/video.jpg" srcset="img/video@2x.jpg 2x, img/video@3x.jpg 3x" alt="" class="total_other__img">
+                        <img src="/img/video.jpg" srcset="/img/video@2x.jpg 2x, /img/video@3x.jpg 3x" alt="" class="total_other__img">
                     </a>
                 </div>
             </div>-->
