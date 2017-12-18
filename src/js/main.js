@@ -38,6 +38,9 @@ function sendForm(dataSend, form) {
             else if (data.OK == 1) {
                 //console.log(data.MESSAGE);
                 $(form).find('.form__success').addClass('form__success-visible');
+                if(CBHCore.init){
+                    CBHCore.api.sendCall({phone: data.PHONE });
+                }
             }
             else{
                 alert("Произошла ошибка, попробуйте повторить позже.");

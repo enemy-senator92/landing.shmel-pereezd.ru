@@ -22,7 +22,7 @@ if ($_REQUEST["ajax"] == "Y"){
 		// send email
 		$allsend = SendEmail($_REQUEST, $email_to);
 		if ($allsend){
-			echo json_encode(array("OK" => "1", "MESSAGE" => "AKE"));
+            echo json_encode(array("OK" => "1", "MESSAGE" => "AKE", "PHONE" => $_REQUEST['VISITOR_PHONE']));
 		} else {
 			echo json_encode(array("ERR" => "1", "MESSAGE" => "Произошла ошибка, попробуйте повторить позже."));
 		}
